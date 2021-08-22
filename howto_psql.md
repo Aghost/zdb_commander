@@ -1,0 +1,18 @@
+#
+
+## Run script
+psql -U postgres -d testdb -f script-filename
+
+## Run sql command
+psql -U postgres -d testdb -c "commands"
+
+---
+general:
+## Connect to psql
+`psql -U postgres`
+
+## connect to db
+`psql -d database_name -U user_name`
+
+## connect to external db
+`psql -h hostname -d database_name -U user_name -p 5432 -a -q` ??
